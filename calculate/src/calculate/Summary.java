@@ -17,11 +17,18 @@ import javax.swing.*;
 
 public class Summary extends JFrame
 {
+<<<<<<< HEAD
 	static ArrayList<String>  Grade = new ArrayList<String>();
 	 static ArrayList<String> integer1 = new ArrayList<String>();
  	static ArrayList<String> IntAnswer1 = new ArrayList<String>();
  	static ArrayList<String> fraction1 = new ArrayList<String>();
  	static ArrayList<String> FraAnswer1 = new ArrayList<String>();
+=======
+	 static ArrayList<String> integer = new ArrayList<String>();
+ 	static ArrayList<String> IntAnswer = new ArrayList<String>();
+ 	static ArrayList<String> fraction = new ArrayList<String>();
+ 	static ArrayList<String> FraAnswer = new ArrayList<String>();
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 
 	 public static final int DEFAULT_WIDTH = 500;
 	 public static final int DEFAULT_HEIGHT = 500;
@@ -32,6 +39,7 @@ public class Summary extends JFrame
 	 private JLabel label1;
 	 private JTextArea textArea1;
 	 calculate cal = new calculate();
+<<<<<<< HEAD
 	 int j=-1;
 	 public  Summary(int grade,final ArrayList<String> Calculate,final ArrayList<String> Answer,
 		    final BufferedWriter out,int[] Error,final int n,final String c11,final String c22)
@@ -41,6 +49,11 @@ public class Summary extends JFrame
 	     Grade.add(0+"");
 	     Grade.add(grade+"");
 	     
+=======
+	 public  Summary(int grade,final ArrayList<String> Calculate,final ArrayList<String> Answer,
+		    final BufferedWriter out,int[] Error,final int n,final String c11,final String c22)
+	 {
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		 setTitle("得分情况");
 	    setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 	    setLocationByPlatform(true);//可以自行设置窗口位置 
@@ -80,11 +93,15 @@ public class Summary extends JFrame
 			public  void actionPerformed(ActionEvent  event)
 			{
 				//ArrayList<Competitor> competition = new ArrayList<Competitor>();
+<<<<<<< HEAD
 				ArrayList<String>  Grade = new ArrayList<String>();
 				 ArrayList<String> integer1 = new ArrayList<String>();
 			 	ArrayList<String> IntAnswer1 = new ArrayList<String>();
 			 	ArrayList<String> fraction1 = new ArrayList<String>();
 			 	ArrayList<String> FraAnswer1 = new ArrayList<String>();
+=======
+
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		    	int i,result;
 		         // n=in.nextInt();
 		        int value;
@@ -110,9 +127,15 @@ public class Summary extends JFrame
 									// TODO Auto-generated catch block
 									e.printStackTrace();
 								} // \r\n即为换行   
+<<<<<<< HEAD
 		            	    integer1.add(s);
 		            	    
 		            	    IntAnswer1.add(value+"");
+=======
+		            	    integer.add(s);
+		            	    
+		            	    IntAnswer.add(value+"");
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		            	    }
 		            	    
 		            	    
@@ -132,9 +155,15 @@ public class Summary extends JFrame
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							} // \r\n即为换行   
+<<<<<<< HEAD
 		        	    integer1.add(s);
 		        	    
 		        	    IntAnswer1.add(value+"");
+=======
+		        	    integer.add(s);
+		        	    
+		        	    IntAnswer.add(value+"");
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		        	    }
 		           	    break;
 		               case 2:
@@ -151,9 +180,15 @@ public class Summary extends JFrame
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							} // \r\n即为换行   
+<<<<<<< HEAD
 		        	    integer1.add(s);
 		        	    
 		        	    IntAnswer1.add(value+"");
+=======
+		        	    integer.add(s);
+		        	    
+		        	    IntAnswer.add(value+"");
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		        	    }
 		           	    break;
 		            }
@@ -172,8 +207,13 @@ public class Summary extends JFrame
 	                   M=num1*num2*num3;
 	                   String d=cal.simplification(Z,M);
 	                   String s=x1+"/"+num1+"+"+x2+"/"+num2+"+"+x3+"/"+num3+"=";
+<<<<<<< HEAD
 	                   fraction1.add(s);
 	                   FraAnswer1.add(d);
+=======
+	                   fraction.add(s);
+	                   FraAnswer.add(d);
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	            }
 	                  // System.out.println(s);
 	            try {
@@ -183,7 +223,11 @@ public class Summary extends JFrame
 					e.printStackTrace();
 				}
 	              setVisible(false); 
+<<<<<<< HEAD
 		          Select frame = new Select(integer1,fraction1,IntAnswer1,FraAnswer1,out,n,c11,c22);
+=======
+		          Select frame = new Select(integer,fraction,IntAnswer,FraAnswer,out,n,c11,c22);
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	               frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	               frame.setVisible(true);
 	               frame.setResizable(false);//窗口的大小 不可变 
@@ -195,7 +239,11 @@ public class Summary extends JFrame
 				
 		 });
 	
+<<<<<<< HEAD
    button2.addActionListener(new ActionListener()
+=======
+   /* button2.addActionListener(new ActionListener()
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		{
 			public  void actionPerformed(ActionEvent  event)
 			{
@@ -206,6 +254,7 @@ public class Summary extends JFrame
 			          	//final String name11 = new String(name.getText());
 			           //final String number11 = new String(number.getText());
 			          	
+<<<<<<< HEAD
 						Histogram SS = new Histogram(Grade);
 						JFrame jf=new JFrame();
 						  jf.setTitle("静态柱状图");
@@ -215,11 +264,21 @@ public class Summary extends JFrame
 						  jf.setSize( 30*len+50,700);
 						  jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 						  jf.setResizable(false);
+=======
+						Grade ss	= new Grade(fraction,FraAnswer,c1,c2);
+			            setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
+			        	ss.setVisible(true);
+			        	setLocationRelativeTo(null);
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 			        	
 			           }
 					
 				}
+<<<<<<< HEAD
 		 });	
+=======
+		 });*/	
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	 }
 }
 	 

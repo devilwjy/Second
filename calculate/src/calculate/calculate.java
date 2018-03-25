@@ -384,8 +384,11 @@ public class calculate {
         		}
         		return res;
         	}
+<<<<<<< HEAD
 
 		
+=======
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 }
 //}
 

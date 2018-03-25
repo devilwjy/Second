@@ -9,7 +9,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
+<<<<<<< HEAD
 /*public class TimerThread extends Thread {	 
+=======
+/*public class TimerThread extends Thread {	
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	int time = 1;	boolean isRun = true;
 	@Override	public void run() {	
 		while(isRun){			
@@ -62,7 +66,10 @@ public class TimerThread extends JFrame implements Runnable{
 					}
 			}
 	 }
+<<<<<<< HEAD
 	 
+=======
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	 }
 
 	  

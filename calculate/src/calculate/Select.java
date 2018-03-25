@@ -17,7 +17,12 @@ import javax.swing.*;
 
 	 public class Select extends JFrame {
 		// public ArrayList<Competitor> actors; 
+<<<<<<< HEAD
 		 
+=======
+		 String c11;
+		 String c22;
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 		 public static final int DEFAULT_WIDTH = 700;
 		 public static final int DEFAULT_HEIGHT = 300;
 		 
@@ -84,6 +89,7 @@ import javax.swing.*;
 	       
 	       JPanel panel = new JPanel();
 	       add(panel);
+<<<<<<< HEAD
 	      button1.addActionListener(new ActionListener()
 			{
 	    	    String c11;
@@ -96,6 +102,18 @@ import javax.swing.*;
 					     c11= field1.getText();
 					     c22 = field2.getText();
 					
+=======
+	      
+	      button1.addActionListener(new ActionListener()
+			{
+				public  void actionPerformed(ActionEvent  event)
+				{
+					if(n==1)
+					{
+					     c11= field1.getText();
+					     c22 = field2.getText();
+					}
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 						 if(event.getSource()==button1)
 				           {
 							setVisible(false); 
@@ -115,6 +133,7 @@ import javax.swing.*;
 			 });	
 	       button2.addActionListener(new ActionListener()
 			{
+<<<<<<< HEAD
 	    	   public  String c11;
 	  		    public String c22;
 				public  void actionPerformed(ActionEvent  event)
@@ -123,6 +142,14 @@ import javax.swing.*;
 					     c11 = field1.getText();
 					     c22 = field2.getText();
 						//}
+=======
+				public  void actionPerformed(ActionEvent  event)
+				{        if(n==1)
+						{
+					     c11 = field1.getText();
+					     c22 = field2.getText();
+						}
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 						 if(event.getSource()==button2)
 				           {
 							setVisible(false); 

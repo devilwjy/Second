@@ -16,7 +16,12 @@ import javax.swing.*;
  
 public class Main 
 {
+<<<<<<< HEAD
 	 
+=======
+	 static String c1;
+	 static String c2;
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 	static int n=1;
 	final static ArrayList<String> integer = new ArrayList<String>();
 	final static ArrayList<String> IntAnswer = new ArrayList<String>();
@@ -113,8 +118,11 @@ public class Main
 		
 			      EventQueue.invokeLater(new Runnable()
 			         {
+<<<<<<< HEAD
 			    	   String c1;
 			    	   String c2;
+=======
+>>>>>>> 64dc3123e1f25e964ad5fcbadb67cfee6ecaa7f2
 			            public void run()
 			            {
 						//ArrayList<Competitor> competition = new ArrayList<Competitor>();
